@@ -1,0 +1,103 @@
+:root {
+    --bg: #ffffff;
+    --text: #000000;
+    --accent: #6200ea;
+  }
+  
+  body.dark {
+    --bg: #1e1e1e;
+    --text: #ffffff;
+    --accent: #bb86fc;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--accent);
+    color: white;
+    padding: 1rem;
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .intro img {
+    border-radius: 50%;
+    width: 150px;
+    animation: float 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes float {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+  }
+  
+  .projects, .contact {
+    padding: 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background: var(--accent);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1 1 200px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+  }
+  
+  input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: #9887a7;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 600px) {
+    .project-list {
+      flex-direction: column;
+    }
+  }
+  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Samaira's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Samaira's Portfolio</h1>
+    <button id="themeToggle">Toggle Light/Dark</button>
+  </header>
+  <section class="intro">
+    <img src="RACCOON.jpeg" alt="Samaira's photo" />
+    <p>Hi, I’m Samaira, a second year BTech CSE student here at NSUT. I enjoy problem solving and love a good challenge. Coding is my favorite kind of puzzle and it’s the one activity that makes me feel fully in sync with myself. Outside of tech, I play the sitar and occasionally paint or sketch when I need to reset.</p>
+  </section>
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Amazon Employee Database Manager</h3>
+        <p>Made this in Class 12 using Python and MySQL. It lets you add, update, delete and view employee records through a simple terminal interface. I also added some extras like input checks and better formatting just to make it smoother to use. It really helped me understand how databases and Python can work together.</p>
+      </div>
+      <div class="project">
+        <h3>Text-Based RPG (Work-in-Progress)</h3>
+        <p>A Python-based role-playing game exploring turn-based mechanics, inventory systems, and interactive storytelling. Started as a passion project to better understand game logic and apply object-oriented programming concepts in a fun, self-driven setting.</p>
+      </div>
+      <div class="project">
+        <h3>Study Resource Organizer (Concept)</h3>
+        <p>A lightweight tool (currently in ideation) to help students organize academic materials like notes, YouTube tutorials and reference links using tags and categories. The goal is to combine simplicity with structure to make studying more efficient and less overwhelming.</p>
+      </div>
+    </div>
+  </section>
+  <section class="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Message: <textarea name="message" required></textarea></label>
+      <button type="submit">Send</button>
+    </form>
+    <p>Or email me at: <a href="mailto:samaira@gmail.com">samaira@gmail.com</a></p>
+  </section>
+  <footer>
+    <p>© 2025 Samaira.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
